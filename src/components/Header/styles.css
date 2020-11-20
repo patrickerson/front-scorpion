@@ -1,0 +1,17 @@
+#nav-main {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#nav-main a {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+#nav-main a:hover {
+    background-color: #eee;
+}
+
+.text-center {
+    text-align: center;
+}
