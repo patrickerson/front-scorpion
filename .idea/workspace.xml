@@ -19,15 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b518c2d-55d1-4d67-a573-de37a14b7b99" name="Default Changelist" comment="Estrutura inicial.">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/MemberInfoService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
+    <list default="true" id="2b518c2d-55d1-4d67-a573-de37a14b7b99" name="Default Changelist" comment="Criando a lista de exibiçao e funçao de deletar.">
+      <change afterPath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Cadastrar/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../xampp/htdocs/api-scorpion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,7 +71,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +85,10 @@
       <workItem from="1605838553860" duration="413000" />
       <workItem from="1605838984831" duration="208000" />
       <workItem from="1605839278709" duration="5141000" />
-      <workItem from="1605918117651" duration="11204000" />
+      <workItem from="1605918117651" duration="11568000" />
+      <workItem from="1605980020871" duration="3953000" />
+      <workItem from="1605987927546" duration="4489000" />
+      <workItem from="1605995830224" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="Estrutura inicial.">
       <created>1605843680321</created>
@@ -100,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605843878837</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criando a lista de exibiçao e funçao de deletar.">
+      <created>1605929938911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605929938911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,13 +133,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Estrutura inicial." />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="Criando a lista de exibiçao e funçao de deletar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando a lista de exibiçao e funçao de deletar." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1197" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605843458216">
+    <state x="1218" y="416" key="#Custom_Plugin_Repositories" timestamp="1605989773545">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1197" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605843458216" />
+    <state x="1218" y="416" key="#Custom_Plugin_Repositories/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605989773545" />
+    <state x="1197" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605981072696">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1197" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605981072696" />
     <state x="1169" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605842764608">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -137,34 +153,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1016" y="364" key="FileChooserDialogImpl/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605924635881" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1605839193074">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1605995692154">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605839193074" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1605839193074">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605995692154" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1605995692153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605839193074" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1605839193073">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605995692153" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1605995692153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605839193073" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1605839193074">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605995692153" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1605995692153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605839193074" />
-    <state x="713" y="279" key="SettingsEditor" timestamp="1605839509858">
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605995692153" />
+    <state x="840" y="162" key="SettingsEditor" timestamp="1605989806664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="713" y="279" key="SettingsEditor/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605839509858" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605843882368">
+    <state x="840" y="162" key="SettingsEditor/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605989806664" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605929949823">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605843882368" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605929949823" />
     <state x="667" y="57" width="585" height="936" key="find.popup" timestamp="1605918855978">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="57" width="585" height="936" key="find.popup/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605918855978" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1605981741376">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605981741376" />
     <state x="226" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1605922369000">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -7,10 +7,10 @@ function Header() {
     return (
         <nav id={'nav-main'}>
             <NavLink to={'/'}>
-                Main
+                Home
             </NavLink>
-            <NavLink to={'/profile'}>
-                Profile
+            <NavLink to={'/cadastrar'}>
+                Cadastrar
             </NavLink>
         </nav>
     );
