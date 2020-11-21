@@ -2,7 +2,9 @@
     text-align: center;
 }
 
-/*.card-cadastrar{*/
-/*    text-align: center;*/
-/*    align-items: center;*/
-/*}*/
+.card-cadastrar{
+    align-self: center;
+    background-color:white;
+    padding: 10px;
+    width: 65%;
+}

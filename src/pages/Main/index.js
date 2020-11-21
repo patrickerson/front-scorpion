@@ -1,19 +1,12 @@
 import React from "react";
 import _Page from "../_Page";
 import "./styles.css";
-import {
-  Button,
-  Card,
-  Table,
-  Space,
-} from "antd";
-import {
-  EditOutlined,
-  DeleteOutlined,
-} from "@ant-design/icons";
+import { Button, Card, Table, Space, Layout } from "antd";
+import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import MemberInfoService from "../../services/MemberInfoService";
 import Header from "../../components/Header";
 
+const { Content } = Layout;
 class Main extends _Page {
   state = {
     members: [],
@@ -90,8 +83,7 @@ class Main extends _Page {
       key: "operation",
       render: (member_info) => (
         <Space size="middle">
-          <Button icon={<EditOutlined />}>
-          </Button>
+          <Button icon={<EditOutlined />}></Button>
           <Button
             icon={<DeleteOutlined />}
             onClick={(e) => {
@@ -104,8 +96,7 @@ class Main extends _Page {
                 });
               }
             }}
-          >
-          </Button>
+          ></Button>
         </Space>
       ),
     },
@@ -120,13 +111,17 @@ class Main extends _Page {
   render() {
     return (
       <>
-        <Header />
-        <Card title="Member List" />
-        <Table
-          columns={this.columns}
-          dataSource={this.state.members}
-          rowKey="ID"
-        />
+        <Layout style={{backgroundColor: "white"}}>
+          <Header />
+          <Card title="Lista de Membros" />
+          <Content>
+            <Table
+              columns={this.columns}
+              dataSource={this.state.members}
+              rowKey="ID"
+            />
+          </Content>
+        </Layout>
       </>
     );
   }
