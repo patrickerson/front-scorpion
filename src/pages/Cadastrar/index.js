@@ -1,9 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import _Page from "../_Page";
-import "./styles.css";
+
 import MemberInfoService from "../../services/MemberInfoService";
 import Header from "../../components/Header";
-import PropTypes from "prop-types";
+
+import "./styles.css";
+
 import {
   Form,
   Input,
@@ -54,7 +57,13 @@ class Cadastrar extends _Page {
         <Layout style={{backgroundColor: "white"}}>
           <Header/>
           <Content className={"card-cadastrar"}>
-            <Form   {...layout} name="nest-messages" onFinish={this.handleSubmit}>
+            <Form
+              ref={(ref) => this.formRef = ref}
+              {...layout}
+              name="nest-messages"
+              onFinish={this.handleSubmit}
+              initialValues={this.state.model}
+            >
               <Form.Item
                 name={["username"]}
                 label="Nome"
@@ -73,52 +82,52 @@ class Cadastrar extends _Page {
                 <Input/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "email"]}
+                name={["email"]}
                 label="Email"
               >
                 <Input/>
               </Form.Item>
-              <Form.Item name={["member_info", "comments"]} label="Comentário">
+              <Form.Item name={["comments"]} label="Comentário">
                 <Input.TextArea/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "num_recs_to_display"]}
+                name={["num_recs_to_display"]}
                 label="Max de Consultas"
               >
                 <InputNumber/>
               </Form.Item>
-              <Form.Item name={["member_info", "my_sort_by"]} label="Classificar por">
+              <Form.Item name={["my_sort_by"]} label="Classificar por">
                 <Input/>
               </Form.Item>
-              <Form.Item name={["member_info", "orig_email"]} label="Origem de email">
+              <Form.Item name={["orig_email"]} label="Origem de email">
                 <Input/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "account_opened"]}
+                name={["account_opened"]}
                 label="Data de abertura"
               >
-                <DatePicker/>
+                <DatePicker format={this.getMomentDate}/>
               </Form.Item>
-              <Form.Item name={["member_info", "last_login"]} label="Último login">
-                <DatePicker/>
+              <Form.Item name={["last_login"]} label="Último login">
+                <DatePicker format={this.getMomentDate}/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "last_transaction"]}
+                name={["last_transaction"]}
                 label="Última mudança"
               >
-                <DatePicker/>
+                <DatePicker format={this.getMomentDate}/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "admin_response"]}
+                name={["admin_response"]}
                 label="Resposta do Admin"
               >
                 <Input.TextArea/>
               </Form.Item>
               <Form.Item
-                name={["member_info", "respond_date"]}
+                name={["respond_date"]}
                 label="Data da Resposta"
               >
-                <DatePicker/>
+                <DatePicker format={this.getMomentDate}/>
               </Form.Item>
               <Form.Item>
                 <Button type="primary" htmlType="submit">

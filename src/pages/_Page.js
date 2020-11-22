@@ -1,4 +1,5 @@
-import { Component } from "react";
+import {Component} from "react";
+import moment from "moment";
 
 class _Page extends Component {
   componentDidMount() {
@@ -18,17 +19,22 @@ class _Page extends Component {
   };
 
   loading = () => {
-    return this.update({ loading: true });
+    return this.update({loading: true});
   };
 
   loaded = () => {
-    return this.update({ loading: false });
+    return this.update({loading: false});
   };
 
   _handleInputChange = (e, target = this.state) => {
     target[e.target.name] = e.target.value;
     return this.update();
   };
+
+  getMomentDate = (date) => {
+    // format={customFormat}
+    return moment(date).format('YYYY-MM-DD');
+  }
 
   // funcao util para buscar os dados do model
   getModel = async () => {
@@ -37,7 +43,13 @@ class _Page extends Component {
     }
     return this.service
       .get(this.getParam("id"))
-      .then(async (response) => await this.update({ model: response.data }));
+      .then(async ({data}) => {
+        await this.update({model: data});
+
+        if (this.formRef) {
+          this.formRef.setFieldsValue(data);
+        }
+      });
   };
 }
 

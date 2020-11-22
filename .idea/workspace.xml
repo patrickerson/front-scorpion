@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b518c2d-55d1-4d67-a573-de37a14b7b99" name="Default Changelist" comment="Criando a lista de exibiçao e funçao de deletar.">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_Page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +69,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +87,8 @@
       <workItem from="1605980020871" duration="3953000" />
       <workItem from="1605987927546" duration="4489000" />
       <workItem from="1605995830224" duration="1296000" />
-      <workItem from="1606066589979" duration="355000" />
+      <workItem from="1606066589979" duration="1164000" />
+      <workItem from="1606084529007" duration="2404000" />
     </task>
     <task id="LOCAL-00001" summary="Estrutura inicial.">
       <created>1605843680321</created>
@@ -106,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605929938911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="correçao">
+      <created>1606067131465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606067131465</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +141,8 @@
     <MESSAGE value="Estrutura inicial." />
     <MESSAGE value="initial" />
     <MESSAGE value="Criando a lista de exibiçao e funçao de deletar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando a lista de exibiçao e funçao de deletar." />
+    <MESSAGE value="correçao" />
+    <option name="LAST_COMMIT_MESSAGE" value="correçao" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1218" y="416" key="#Custom_Plugin_Repositories" timestamp="1605989773545">
@@ -168,18 +181,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="840" y="162" key="SettingsEditor/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605989806664" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605929949823">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606067133665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605929949823" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1606067133665" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606084650311">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1606084650311" />
     <state x="667" y="57" width="585" height="936" key="find.popup" timestamp="1605918855978">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="57" width="585" height="936" key="find.popup/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605918855978" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1605981741376">
+    <state x="616" y="243" key="run.anything.popup" timestamp="1606085318243">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1605981741376" />
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/0.-1080.1920.1050@0.0.1920.1050" timestamp="1606085318243" />
     <state x="226" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1605922369000">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
