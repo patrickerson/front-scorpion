@@ -56,7 +56,7 @@ class Cadastrar extends _Page {
           <Content className={"card-cadastrar"}>
             <Form   {...layout} name="nest-messages" onFinish={this.handleSubmit}>
               <Form.Item
-                name={["user", "username"]}
+                name={["member_info", "username"]}
                 label="Nome"
                 // rules= {[
                 //       { required: true, message: "Campo obrigatório" },
@@ -66,55 +66,55 @@ class Cadastrar extends _Page {
                 <Input />
               </Form.Item>
               <Form.Item
-                name={["user", "password"]}
+                name={["member_info", "password"]}
                 label="Senha"
               >
                 <Input />
               </Form.Item>
               <Form.Item
-                name={["user", "email"]}
+                name={["member_info", "email"]}
                 label="Email"
               >
                 <Input />
               </Form.Item>
-              <Form.Item name={["user", "comments"]} label="Comentário">
+              <Form.Item name={["member_info", "comments"]} label="Comentário">
                 <Input.TextArea />
               </Form.Item>
               <Form.Item
-                name={["user", "num_recs_to_display"]}
+                name={["member_info", "num_recs_to_display"]}
                 label="Max de Consultas"
               >
                 <InputNumber />
               </Form.Item>
-              <Form.Item name={["user", "my_sort_by"]} label="Classificar por">
+              <Form.Item name={["member_info", "my_sort_by"]} label="Classificar por">
                 <Input />
               </Form.Item>
-              <Form.Item name={["user", "orig_email"]} label="Origem de email">
+              <Form.Item name={["member_info", "orig_email"]} label="Origem de email">
                 <Input />
               </Form.Item>
               <Form.Item
-                name={["user", "account_opened"]}
+                name={["member_info", "account_opened"]}
                 label="Data de abertura"
               >
                 <DatePicker />
               </Form.Item>
-              <Form.Item name={["user", "last_login"]} label="Último login">
+              <Form.Item name={["member_info", "last_login"]} label="Último login">
                 <DatePicker />
               </Form.Item>
               <Form.Item
-                name={["user", "last_transaction"]}
+                name={["member_info", "last_transaction"]}
                 label="Última mudança"
               >
                 <DatePicker />
               </Form.Item>
               <Form.Item
-                name={["user", "admin_response"]}
+                name={["member_info", "admin_response"]}
                 label="Resposta do Admin"
               >
                 <Input.TextArea />
               </Form.Item>
               <Form.Item
-                name={["user", "respond_date"]}
+                name={["member_info", "respond_date"]}
                 label="Data da Resposta"
               >
                 <DatePicker />
