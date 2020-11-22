@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b518c2d-55d1-4d67-a573-de37a14b7b99" name="Default Changelist" comment="Criando a lista de exibiçao e funçao de deletar.">
-      <change afterPath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Cadastrar/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cadastrar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +83,7 @@
       <workItem from="1605980020871" duration="3953000" />
       <workItem from="1605987927546" duration="4489000" />
       <workItem from="1605995830224" duration="1296000" />
+      <workItem from="1606066589979" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="Estrutura inicial.">
       <created>1605843680321</created>

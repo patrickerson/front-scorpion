@@ -44,7 +44,7 @@ class Cadastrar extends _Page {
             message: "Sucesso!",
             description: "Suas alterações foram salvas com sucesso."
           });
-        //   this.props.history.push("/")
+          this.props.history.push("/")
         });
       };
 
