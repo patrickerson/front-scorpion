@@ -1,18 +1,17 @@
 import React from "react";
 import _Page from "../_Page";
 import "./styles.css";
-import { NavLink } from "react-router-dom";
 import MemberInfoService from "../../services/MemberInfoService";
 import Header from "../../components/Header";
 import PropTypes from "prop-types";
 import {
-  Card,
   Form,
   Input,
   InputNumber,
   DatePicker,
   Button,
   Layout,
+  notification
 } from "antd";
 // import from "@ant-design/icons";
 
@@ -23,44 +22,58 @@ const layout = {
     wrapperCol: { span: 16 },
   };
 
-
-// const validateMessages = {
-//   required: "${label} is required!",
-//   types: {
-//     email: "${label} is not a valid email!",
-//     number: "${label} is not a valid number!",
-//   },
-//   number: {
-//     range: "${label} must be between ${min} and ${max}",
-//   },
-// };
-
 class Cadastrar extends _Page {
+    // static propTypes = {
+    //     form: PropTypes.any.isRequired
+    //   };
+
+      state = {
+        model: {}
+      };
+
+      componentDidMount() {
+        this.getModel();
+      }
+
+    handleSubmit = e => {
+        // e.preventDefault();
+
+        MemberInfoService.save(e, "ID").then(response => {
+          this.update({ model: response.data });
+          notification.open({
+            message: "Sucesso!",
+            description: "Suas alterações foram salvas com sucesso."
+          });
+        //   this.props.history.push("/")
+        });
+      };
+
   render() {
     return (
       <>
         <Layout style={{backgroundColor: "white"}}>
           <Header />
           <Content className={"card-cadastrar"}>
-            <Form   {...layout} name="nest-messages" onFinish={this.onFinish}>
+            <Form   {...layout} name="nest-messages" onFinish={this.handleSubmit}>
               <Form.Item
-                name={["user", "name"]}
+                name={["user", "username"]}
                 label="Nome"
-                rules={[{ required: true }]}
+                // rules= {[
+                //       { required: true, message: "Campo obrigatório" },
+                //       { max: 30, message: "maximo de 30 caracteres" }
+                //     ]}
               >
                 <Input />
               </Form.Item>
               <Form.Item
                 name={["user", "password"]}
                 label="Senha"
-                rules={[{ required: true }]}
               >
                 <Input />
               </Form.Item>
               <Form.Item
                 name={["user", "email"]}
                 label="Email"
-                rules={[{ type: "email" }]}
               >
                 <Input />
               </Form.Item>
@@ -70,7 +83,6 @@ class Cadastrar extends _Page {
               <Form.Item
                 name={["user", "num_recs_to_display"]}
                 label="Max de Consultas"
-                rules={[{ type: "number", min: 0, max: 99 }]}
               >
                 <InputNumber />
               </Form.Item>

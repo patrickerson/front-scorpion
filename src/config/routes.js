@@ -17,7 +17,10 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path={'/'} component={Main}/>
-            <Route exact path={'/cadastrar'} component={Cadastrar}/>
+            <Route path={'/cadastrar'} component={Cadastrar}/>
+
+            <PrivateRoute exact path={'/'} component={Main}/>
+
             <Route path="*" component={NotFound}/>
         </Switch>
     </BrowserRouter>

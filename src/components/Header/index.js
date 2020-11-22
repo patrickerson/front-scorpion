@@ -9,7 +9,7 @@ function Header() {
             <NavLink to={'/'}>
                 Home
             </NavLink>
-            <NavLink to={'/cadastrar'}>
+            <NavLink to={'/cadastrar/0'}>
                 Cadastrar
             </NavLink>
         </nav>
