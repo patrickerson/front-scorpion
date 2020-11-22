@@ -1,12 +1,14 @@
 import React from "react";
 import _Page from "../_Page";
 import "./styles.css";
-import { Button, Card, Table, Space, Layout } from "antd";
-import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
+import {Button, Card, Table, Space, Layout} from "antd";
+import {EditOutlined, DeleteOutlined} from "@ant-design/icons";
+import {NavLink} from 'react-router-dom';
 import MemberInfoService from "../../services/MemberInfoService";
 import Header from "../../components/Header";
 
-const { Content } = Layout;
+const {Content} = Layout;
+
 class Main extends _Page {
   state = {
     members: [],
@@ -83,15 +85,18 @@ class Main extends _Page {
       key: "operation",
       render: (member_info) => (
         <Space size="middle">
-          <Button icon={<EditOutlined />}></Button>
+          <NavLink to={"/cadastrar/" + member_info.ID}>
+            <Button><EditOutlined/></Button>
+          </NavLink>
+
           <Button
-            icon={<DeleteOutlined />}
+            icon={<DeleteOutlined/>}
             onClick={(e) => {
               e.preventDefault();
               if (window.confirm("Deseja remover o registro?")) {
                 MemberInfoService.delete(member_info.ID).then((response) => {
                   MemberInfoService.getAll().then((response) => {
-                    this.update({ members: response.data });
+                    this.update({members: response.data});
                   });
                 });
               }
@@ -101,10 +106,11 @@ class Main extends _Page {
       ),
     },
   ];
+
   componentDidMount() {
     super.componentDidMount();
     MemberInfoService.getAll().then((response) => {
-      this.update({ members: response.data });
+      this.update({members: response.data});
     });
   }
 
@@ -112,8 +118,8 @@ class Main extends _Page {
     return (
       <>
         <Layout style={{backgroundColor: "white"}}>
-          <Header />
-          <Card title="Lista de Membros" />
+          <Header/>
+          <Card title="Lista de Membros"/>
           <Content>
             <Table
               columns={this.columns}
