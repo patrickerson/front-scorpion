@@ -65,13 +65,14 @@ class Cadastrar extends _Page {
               initialValues={this.state.model}
             >
               <Form.Item
+                name={["ID"]}
+                label="ID"
+                noStyle>
+                <Input type="hidden" />
+              </Form.Item>
+              <Form.Item
                 name={["username"]}
                 label="Nome"
-                // valuePropName={this.state.model.username}
-                // rules= {[
-                //       { required: true, message: "Campo obrigatório" },
-                //       { max: 30, message: "maximo de 30 caracteres" }
-                //     ]} name="username" value={this.state.model.username} onChange={e => this._handleInputChange(e, this.state.model)}
               >
                 <Input/>
               </Form.Item>
@@ -106,16 +107,16 @@ class Cadastrar extends _Page {
                 name={["account_opened"]}
                 label="Data de abertura"
               >
-                <DatePicker format={this.getMomentDate}/>
+                <DatePicker />
               </Form.Item>
               <Form.Item name={["last_login"]} label="Último login">
-                <DatePicker format={this.getMomentDate}/>
+                <DatePicker />
               </Form.Item>
               <Form.Item
                 name={["last_transaction"]}
                 label="Última mudança"
               >
-                <DatePicker format={this.getMomentDate}/>
+                <DatePicker />
               </Form.Item>
               <Form.Item
                 name={["admin_response"]}
@@ -127,7 +128,7 @@ class Cadastrar extends _Page {
                 name={["respond_date"]}
                 label="Data da Resposta"
               >
-                <DatePicker format={this.getMomentDate}/>
+                <DatePicker />
               </Form.Item>
               <Form.Item>
                 <Button type="primary" htmlType="submit">

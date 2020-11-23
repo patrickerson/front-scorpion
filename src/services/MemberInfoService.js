@@ -27,7 +27,7 @@ export default class MemberInfoService {
 
         let url = "/member_info";
         let method = "post";
-console.log(data);
+
         if (id) {
             url += `/${id}`;
             method = "put";

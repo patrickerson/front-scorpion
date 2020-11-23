@@ -31,20 +31,32 @@ class _Page extends Component {
     return this.update();
   };
 
-  getMomentDate = (date) => {
-    // format={customFormat}
-    return moment(date).format('YYYY-MM-DD');
-  }
-
   // funcao util para buscar os dados do model
   getModel = async () => {
     if (!+this.getParam("id")) {
       return;
     }
+
     return this.service
       .get(this.getParam("id"))
       .then(async ({data}) => {
         await this.update({model: data});
+
+        if (data.account_opened) {
+          data.account_opened = moment(data.account_opened);
+        }
+
+        if (data.last_login) {
+          data.last_login = moment(data.last_login);
+        }
+
+        if (data.respond_date) {
+          data.respond_date = moment(data.respond_date);
+        }
+
+        if (data.last_transaction) {
+          data.last_transaction = moment(data.last_transaction);
+        }
 
         if (this.formRef) {
           this.formRef.setFieldsValue(data);
