@@ -1,0 +1,10 @@
+#cadastrar-page {
+    text-align: center;
+}
+
+.card-cadastrar{
+    align-self: center;
+    background-color:white;
+    padding: 10px;
+    width: 65%;
+}

@@ -12,6 +12,12 @@ function Header() {
             <NavLink to={'/cadastrar/0'}>
                 Cadastrar
             </NavLink>
+            <NavLink to={'/criptografia'}>
+                Arquivos
+            </NavLink>
+            <NavLink to={'/calculos'}>
+                Calculos
+            </NavLink>
         </nav>
     );
 }

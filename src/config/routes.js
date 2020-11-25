@@ -6,7 +6,8 @@ import AuthService from '../services/AuthService';
 import Main from '../pages/Main';
 import Cadastrar from '../pages/Cadastrar';
 import NotFound from '../pages/Error/NotFound';
-
+import SubmitComponent from '../pages/Arquivos';
+import Calculos from '../pages/Calculos';
 const PrivateRoute = (props) => (
     AuthService.isAuthenticated()
         ? <Route {...props}/>
@@ -18,7 +19,8 @@ const Routes = () => (
         <Switch>
             <Route exact path={'/'} component={Main}/>
             <Route path={'/cadastrar/:id'} component={Cadastrar}/>
-
+            <Route path={'/criptografia'} component={SubmitComponent}/>
+            <Route path={'/calculos'} component={Calculos}/>
             <PrivateRoute exact path={'/'} component={Main}/>
 
             <Route path="*" component={NotFound}/>
