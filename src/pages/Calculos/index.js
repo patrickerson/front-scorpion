@@ -14,6 +14,7 @@ import {
     DatePicker,
     Button,
     Layout,
+    Typography,
     notification
   } from "antd";
 
@@ -44,71 +45,184 @@ export default class Calculos extends _Page{
                   onFinish={this.handleSubmit}
                   initialValues={this.state.model}
                 >
+                  
                   <Form.Item
                     name={["ID"]}
                     label="ID"
                     noStyle>
                     <Input type="hidden" />
                   </Form.Item>
+                  <Typography.Title>Asp Glyph</Typography.Title>
                   <Form.Item
-                    name={["username"]}
-                    label="Nome"
-                  >
-                    <Input/>
-                  </Form.Item>
-                  <Form.Item
-                    name={["password"]}
-                    label="Senha"
-                  >
-                    <Input/>
-                  </Form.Item>
-                  <Form.Item
-                    name={["email"]}
-                    label="Email"
-                  >
-                    <Input/>
-                  </Form.Item>
-                  <Form.Item name={["comments"]} label="Comentário">
-                    <Input.TextArea/>
-                  </Form.Item>
-                  <Form.Item
-                    name={["num_recs_to_display"]}
-                    label="Max de Consultas"
+                    name={["asp_glyph_1"]}
+                    label="asp glyph 1"
                   >
                     <InputNumber/>
                   </Form.Item>
-                  <Form.Item name={["my_sort_by"]} label="Classificar por">
-                    <Input/>
-                  </Form.Item>
-                  <Form.Item name={["orig_email"]} label="Origem de email">
-                    <Input/>
+                  <Form.Item
+                    name={["asp_glyph_2"]}
+                    label="asp glyph 2"
+                  >
+                    <InputNumber/>
                   </Form.Item>
                   <Form.Item
-                    name={["account_opened"]}
-                    label="Data de abertura"
+                    name={["asp_glyph_3"]}
+                    label="asp glyph 3"
                   >
-                    <DatePicker />
-                  </Form.Item>
-                  <Form.Item name={["last_login"]} label="Último login">
-                    <DatePicker />
+                    <InputNumber/>
                   </Form.Item>
                   <Form.Item
-                    name={["last_transaction"]}
-                    label="Última mudança"
+                    name={["asp_glyph_4"]}
+                    label="asp glyph 4"
                   >
-                    <DatePicker />
+                    <InputNumber/>
+                  </Form.Item>
+                 
+                  <Typography.Title>Sign Glyph</Typography.Title>
+                  <Form.Item
+                    name={["sign_glyph_1"]}
+                    label="sign glyph 1"
+                  >
+                    <InputNumber/>
                   </Form.Item>
                   <Form.Item
-                    name={["admin_response"]}
-                    label="Resposta do Admin"
+                    name={["sign_glyph_2"]}
+                    label="sign glyph 2"
                   >
-                    <Input.TextArea/>
+                    <InputNumber/>
                   </Form.Item>
                   <Form.Item
-                    name={["respond_date"]}
-                    label="Data da Resposta"
+                    name={["sign_glyph_3"]}
+                    label="sign glyph 3"
                   >
-                    <DatePicker />
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_4"]}
+                    label="sign glyph 4"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_5"]}
+                    label="sign glyph 5"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_6"]}
+                    label="sign glyph 6"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_7"]}
+                    label="sign glyph 7"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_8"]}
+                    label="sign glyph 8"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_9"]}
+                    label="sign glyph 9"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_10"]}
+                    label="sign glyph 10"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_11"]}
+                    label="sign glyph 11"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["sign_glyph_12"]}
+                    label="sign glyph 12"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Typography.Title>Pl Glyph</Typography.Title>
+                  <Form.Item
+                    name={["pl_glyph_1"]}
+                    label="pl glyph 1"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_2"]}
+                    label="pl glyph 2"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_3"]}
+                    label="pl glyph 3"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_4"]}
+                    label="pl glyph 4"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_5"]}
+                    label="pl glyph 5"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_6"]}
+                    label="pl glyph 6"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_7"]}
+                    label="pl glyph 7"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_8"]}
+                    label="pl glyph 8"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_9"]}
+                    label="pl glyph 9"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_10"]}
+                    label="pl glyph 10"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_11"]}
+                    label="pl glyph 11"
+                  >
+                    <InputNumber/>
+                  </Form.Item>
+                  <Form.Item
+                    name={["pl_glyph_12"]}
+                    label="pl glyph 12"
+                  >
+                    <InputNumber/>
                   </Form.Item>
                   <Form.Item>
                     <Button type="primary" htmlType="submit">
