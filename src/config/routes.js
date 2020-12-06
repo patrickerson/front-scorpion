@@ -8,6 +8,7 @@ import Cadastrar from '../pages/Cadastrar';
 import NotFound from '../pages/Error/NotFound';
 import SubmitComponent from '../pages/Arquivos';
 import Calculos from '../pages/Calculos';
+import Database from '../pages/PersonalDatabase'
 const PrivateRoute = (props) => (
     AuthService.isAuthenticated()
         ? <Route {...props}/>
@@ -21,6 +22,7 @@ const Routes = () => (
             <Route path={'/cadastrar/:id'} component={Cadastrar}/>
             <Route path={'/criptografia'} component={SubmitComponent}/>
             <Route path={'/calculos'} component={Calculos}/>
+            <Route path={'/database'} component={Database}/>
             <PrivateRoute exact path={'/'} component={Main}/>
 
             <Route path="*" component={NotFound}/>

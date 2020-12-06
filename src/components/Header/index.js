@@ -18,6 +18,9 @@ function Header() {
             <NavLink to={'/calculos'}>
                 Calculos
             </NavLink>
+            <NavLink to={'/database'}>
+                Database
+            </NavLink>
         </nav>
     );
 }

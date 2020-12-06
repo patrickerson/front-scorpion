@@ -6,10 +6,12 @@ import { Component } from 'react';
 import MemberInfoService from "../../services/MemberInfoService";
 import Header from "../../components/Header";
 import {JSEncrypt} from 'jsencrypt';
+import {UploadOutlined, InboxOutlined} from "@ant-design/icons";
 
 import "./styles.css";
 
 import {
+  Upload,
   Form,
   Input,
   InputNumber,
@@ -179,24 +181,42 @@ export default class SubmitComponent extends _Page {
       }
   render() {
     return (
-      <>
+        <>
         <Layout style={{backgroundColor: "white"}}>
-          <Header/>
-          
-          <Content className={"card-criptografia"}>
-                 <div onSubmit={this.onFormSubmit}>
-         <label for="files" class="btn" id="inputFile" >Select Image</label>
-        <input id="files"  type="file" name="file" onChange={(e)=>this.onChange(e) }/>
-        </div>
-                 <div id="agf" style={{margin:"50px 50px 50px 50px", backgroundColor: "gray", fontSize: "1"}} value="teste"></div>
-        <Button type="primary" htmlType="submit" onClick={this.downloadTxtFile}>
-                  Submit
-                </Button>
-        </Content>
-       
-        </Layout>
-      </>
+              <Header/>
+              <Content className={"card-arquivos"}></Content>
+    
+          <Upload className={"upload-drag"} directory>
+  
+            <Button icon={<UploadOutlined/>}>Insira um arquivo ou Diretório</Button>
+          </Upload>
+          <Form.Item>
+                    <Button type="primary" htmlType="submit">
+                      Submit
+                    </Button>
+                  </Form.Item>
+          </Layout>
+        </>
     );
+    // return (
+    //   <>
+    //     <Layout style={{backgroundColor: "white"}}>
+    //       <Header/>
+          
+    //       <Content className={"card-criptografia"}>
+    //              <div onSubmit={this.onFormSubmit}>
+    //      <label for="files" class="btn" id="inputFile" >Select Image</label>
+    //     <input id="files"  type="file" name="file" onChange={(e)=>this.onChange(e) }/>
+    //     </div>
+    //              <div id="agf" style={{margin:"50px 50px 50px 50px", backgroundColor: "gray", fontSize: "1"}} value="teste"></div>
+    //     <Button type="primary" htmlType="submit" onClick={this.downloadTxtFile}>
+    //               Submit
+    //             </Button>
+    //     </Content>
+       
+    //     </Layout>
+    //   </>
+    // );
   }
 } 
 

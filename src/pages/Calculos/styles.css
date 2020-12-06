@@ -1,0 +1,15 @@
+#calculos-page {
+    text-align: center;
+}
+
+.card-calculos{
+    text-align: end;
+    align-self: center;
+    background-color:white;
+    padding: 10px;
+    width: 20%;
+}
+
+.title-calculos{
+    text-align: center;
+}

@@ -11,11 +11,11 @@ import {
     Form,
     Input,
     InputNumber,
-    DatePicker,
     Button,
     Layout,
     Typography,
-    notification
+    Switch,
+    Slider
   } from "antd";
 
   const {Content} = Layout;
@@ -24,6 +24,10 @@ import {
     labelCol: {span: 8},
     wrapperCol: {span: 16},
   };
+
+  const tailLayout = {
+    wrapperCol: {offset: 8, span: 16}
+  }
   
 export default class Calculos extends _Page{
 
@@ -37,7 +41,7 @@ export default class Calculos extends _Page{
           <>
             <Layout style={{backgroundColor: "white"}}>
               <Header/>
-              <Content className={"card-cadastrar"}>
+              <Content className={"card-calculos"}>
                 <Form
                   ref={(ref) => this.formRef = ref}
                   
@@ -51,176 +55,189 @@ export default class Calculos extends _Page{
                     label="ID"
                     noStyle>
                     <Input type="hidden" />
+                    
                   </Form.Item>
-                  <Typography.Title>Asp Glyph</Typography.Title>
+                  <Typography.Title className={"title-calculos"}>Aspectos</Typography.Title>
                   <Form.Item
                     name={["asp_glyph_1"]}
-                    label="asp glyph 1"
-                  >
-                    <InputNumber/>
+                    label="Conjunção"
+                  > 
+                
+                    <Switch/>
+                    
                   </Form.Item>
                   <Form.Item
                     name={["asp_glyph_2"]}
-                    label="asp glyph 2"
+                    label="Sextil"
                   >
-                    <InputNumber/>
+                    <Switch/>
+                    
                   </Form.Item>
                   <Form.Item
                     name={["asp_glyph_3"]}
-                    label="asp glyph 3"
+                    label="Quadratura"
                   >
-                    <InputNumber/>
+                    <Switch/>
+                   
                   </Form.Item>
                   <Form.Item
                     name={["asp_glyph_4"]}
-                    label="asp glyph 4"
+                    label="Trigono"
                   >
-                    <InputNumber/>
+                    <Switch/>
+                    
+                  </Form.Item>
+                  <Form.Item
+                    name={["asp_glyph_4"]}
+                    label="Quincunce"
+                  >
+                    <Switch/>
+                    
                   </Form.Item>
                  
-                  <Typography.Title>Sign Glyph</Typography.Title>
+                  <Typography.Title className={"title-calculos"}>Signos</Typography.Title>
                   <Form.Item
                     name={["sign_glyph_1"]}
-                    label="sign glyph 1"
+                    label="Áries"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_2"]}
-                    label="sign glyph 2"
+                    label="Touro"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_3"]}
-                    label="sign glyph 3"
+                    label="Gêmeos"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_4"]}
-                    label="sign glyph 4"
+                    label="Câncer"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_5"]}
-                    label="sign glyph 5"
+                    label="Leão"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_6"]}
-                    label="sign glyph 6"
+                    label="Virgem"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_7"]}
-                    label="sign glyph 7"
+                    label="Libra"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_8"]}
-                    label="sign glyph 8"
+                    label="Escorpião"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_9"]}
-                    label="sign glyph 9"
+                    label="Sagitário"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_10"]}
-                    label="sign glyph 10"
+                    label="Capricórnio"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_11"]}
-                    label="sign glyph 11"
+                    label="Aquário"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["sign_glyph_12"]}
-                    label="sign glyph 12"
+                    label="Peixes"
                   >
                     <InputNumber/>
                   </Form.Item>
-                  <Typography.Title>Pl Glyph</Typography.Title>
+                  <Typography.Title className={"title-calculos"}>Planetas</Typography.Title>
                   <Form.Item
                     name={["pl_glyph_1"]}
-                    label="pl glyph 1"
+                    label="Sol"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_2"]}
-                    label="pl glyph 2"
+                    label="Lua"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_3"]}
-                    label="pl glyph 3"
+                    label="Mercurio"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_4"]}
-                    label="pl glyph 4"
+                    label="Vênus"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_5"]}
-                    label="pl glyph 5"
+                    label="Marte"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_6"]}
-                    label="pl glyph 6"
+                    label="Jupiter"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_7"]}
-                    label="pl glyph 7"
+                    label="Saturno"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_8"]}
-                    label="pl glyph 8"
+                    label="Urano"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_9"]}
-                    label="pl glyph 9"
+                    label="Netuno"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_10"]}
-                    label="pl glyph 10"
+                    label="Plutão"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_11"]}
-                    label="pl glyph 11"
+                    label="Ascendente"
                   >
                     <InputNumber/>
                   </Form.Item>
                   <Form.Item
                     name={["pl_glyph_12"]}
-                    label="pl glyph 12"
+                    label="Meio do céu"
                   >
                     <InputNumber/>
                   </Form.Item>
